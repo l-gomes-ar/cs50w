@@ -1,0 +1,31 @@
+body {
+    padding: 10px;
+}
+
+#title {
+    font-size: 30px;
+}
+
+#price {
+    font-size: 20px;
+}
+
+#description {
+    color: #696969;
+    font-size: 17px;
+    font-style: italic;
+}
+
+.listed {
+    font-size: 15px;
+}
+
+#description_listing {
+    color: #696969;
+    font-size: 25px;
+    font-style: italic;
+}
+
+#price_listing {
+    font-size: 40px;
+}

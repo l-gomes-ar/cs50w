@@ -1,0 +1,55 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2>{{ request.user }}'s Watchlist</h2>
+    
+    {% if message %}
+        <div>{{ message }}</div>
+    {% endif %}
+
+        <br>
+        {% if listings %}
+        {% for listing in listings %}
+            <a href="{% url 'listing' listing.pk %}" class="link-secondary link-underline-opacity-0">
+                <div class="container text-left border py-5 bg-white">
+                    <div class="row align-items-start">
+                        <div class="col text-end">
+                            {% if listing.image_url %}
+                            <img src="{{ listing.image_url }}" width="250" class="me-5">
+                            {% endif %}
+                        </div>
+                        <div class="col text-left">
+                            <strong id="title">{{ listing.title }}</strong>
+                            <p id="price"><strong>Price:</strong> ${{ listing.current_price }}</p>
+                            <p id="description">{{ listing.description }}</p>
+                            <br>
+                            <p class="listed">Created {{ listing.date }}</p>
+                            <p class="listed">By: {{ listing.owner }}</p>
+                            {% if listing.active %}
+                                <span class="badge bg-success">Active</span>
+                                {% if listing.owner != request.user %}
+                                    {% if listing.current_winner == request.user %}
+                                        <span class="badge bg-success">Current Winner</span>
+                                    {% else %}
+                                        <span class="badge bg-danger">Not Current Winner</span>
+                                    {% endif %}
+                                {% endif %}
+                                
+                            {% else %}
+                                <span class="badge bg-danger">Closed</span>
+                                {% if listing.owner != request.user %}
+                                    {% if listing.current_winner == request.user %}
+                                        <span class="badge bg-success">You Won</span>
+                                    {% else %}
+                                        <span class="badge bg-danger">You Lost</span>
+                                    {% endif %}
+                                {% endif %}
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
+    {% endif %}
+
+{% endblock %}

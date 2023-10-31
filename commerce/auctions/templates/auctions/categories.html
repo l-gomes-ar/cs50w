@@ -1,0 +1,20 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2>Categories</h2>
+    
+    {% if message %}
+        <div>{{ message }}</div>
+    {% endif %}
+    
+    <br>
+    {% if categories %}
+        {% for category in categories %}
+        <div class="container list-group text-center w-50">
+            <a href="{% url 'category' category.id %}" class="list-group-item list-group-item-primary list-group-item-action mb-2">
+                {{ category }}
+            </a>
+        </div>
+        {% endfor %}
+    {% endif %}
+{% endblock %}

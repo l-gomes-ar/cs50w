@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        
+        <title>Search</title>
+    </head>
+    <body>
+        <nav>
+            <div>
+                <a href="index.html">Google Search</a>
+            </div>
+            <a href="index.html"><img src="https://www.google.com/intl/en_ALL/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google's official logo" height="35"></a>
+        </nav>
+        <div id="advancedmain">
+            <p id="advancedsearch">Advanced Search</p>
+            <hr>
+            <div>
+                <form action="https://google.com/search" id="advancedform">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Find pages with...</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><label for="all">all these words:</label></td>
+                                <td><input type="text" id="all" name="as_q"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="exact">this exact word or phrase:</label></td>
+                                <td><input type="text" id="exact" name="as_epq"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="any">any of these words:</label></td>
+                                <td><input type="text" id="any" name="as_oq"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="none">none of these words:</label></td>
+                                <td><input type="text" id="none" name="as_eq"></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td><input type="submit" value="Advanced Search"></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

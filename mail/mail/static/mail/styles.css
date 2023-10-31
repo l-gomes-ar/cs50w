@@ -1,0 +1,125 @@
+textarea {
+    min-height: 400px;
+}
+
+body {
+    background-image: url(https://www.freecodecamp.org/news/content/images/size/w2000/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg);
+}
+
+#email {
+    border: .5px solid grey;
+    border-radius: 15px;
+    position: relative;
+    margin: 5px;
+    width: 100%;
+    height: auto;
+    min-width: 500px;
+}
+
+#email p{
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 0;
+}
+
+#email button{
+    border: none;
+    height: 0;
+    width: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.sender {
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+    top: 11px;
+}
+
+.subject {
+    font-style: italic;
+    position: absolute;
+    left: 150px;
+    top: 11px;
+}
+
+.timestamp {
+    color: grey;
+    position: absolute;
+    right: 10px;
+    top: 11px;
+}
+
+.read-false {
+    background-color: azure;
+}
+
+.read-true {
+    background-color: lightgrey;
+}
+
+#emails-view {
+    background-color: rgb(255, 255, 255, .6);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 10px;
+}
+
+#email-view {
+    background-color: rgb(255, 255, 255, .8);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 10px;
+}
+
+#compose-view {
+    background-color: rgb(255, 255, 255, .6);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 10px;
+}
+
+.navbar {
+    background-color: rgb(255, 255, 255, .8);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 10px;
+}
+
+.login {
+    background-color: rgb(255, 255, 255, .7);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 10px;
+    height: auto;
+}
+
+.register {
+    background-color: rgb(255, 255, 255, .7);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 10px;
+    height: auto;
+}
+
+.navbar h2 {
+    margin-right: 20px;
+}
+
+#email-view p {
+    margin: 0;
+}
+
+#email-view p > span {
+    font-weight: bold;
+}
+
+#email-view button {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+}

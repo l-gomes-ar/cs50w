@@ -1,0 +1,13 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Invalid Entry
+{% endblock %}
+
+{% block body %}
+    <h1>Invalid Entry</h1>
+    <hr>
+    <p>There is already an entry with this title!</p>
+
+    <a class="btn btn-primary" href="{% url 'new' %}">Go Back</a>
+{% endblock %}
