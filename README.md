@@ -6,7 +6,7 @@ Welcome to my CS50W (Web Programming with Python and JavaScript) project reposit
 
 ### Search
 
-- [Project Repository](https://github.com/l-gomes-ar/cs50w/search)
+- [Project Repository](https://github.com/l-gomes-ar/cs50w/tree/main/search)
 - [Project Description](https://cs50.harvard.edu/web/2020/projects/0/search/)
 - [Video Demonstration](https://youtu.be/JBUrEUdOFzg?si=PZIq5_TqY2nBeWxX)
 
@@ -14,7 +14,7 @@ Description: The Search project focuses on designing a front-end for Google Sear
 
 ### Wiki
 
-- [Project Repository](https://github.com/l-gomes-ar/cs50w/wiki)
+- [Project Repository](https://github.com/l-gomes-ar/cs50w/tree/main/wiki)
 - [Project Description](https://cs50.harvard.edu/web/2020/projects/1/wiki/)
 - [Video Demonstration](https://youtu.be/WVqRmLr4tpc?si=eXN9j9NSMqYadExq)
 
@@ -22,7 +22,7 @@ Description: The Wiki project is a Wikipedia-like web application that allows us
 
 ### Commerce
 
-- [Project Repository](./commerce)
+- [Project Repository](https://github.com/l-gomes-ar/cs50w/tree/main/commerce)
 - [Project Description](https://cs50.harvard.edu/web/2020/projects/2/commerce/)
 - [Video Demonstration](https://youtu.be/OQkQqU7Vq5M?si=aOzQLUB5qWs-dzrF)
 
@@ -30,7 +30,7 @@ Description: This project is a simple e-commerce website where users can create 
 
 ### Mail
 
-- [Project Repository](https://github.com/l-gomes-ar/cs50w/mail)
+- [Project Repository](https://github.com/l-gomes-ar/cs50w/tree/main/mail)
 - [Project Description](https://cs50.harvard.edu/web/2020/projects/3/mail/)
 - [Video Demonstration](https://youtu.be/bC3yhfSSXVQ?si=b4aG_pVF10v0Pk95)
 
